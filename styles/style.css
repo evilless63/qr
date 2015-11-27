@@ -1,0 +1,639 @@
+/************************FONTS***********************/
+
+/* Код для подключения шрифта в /css/stylename.css */
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "magistralTt"; */
+@font-face {
+    /*font-family: "magistralTt";
+    src: url("../fonts/magistralc/MGNORMAL.ttf")format("truetype"),
+    url("../fonts/magistralc/MGNORMAL.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;*/
+    font-family: magistralTt; /* Имя шрифта */
+    src: url(../fonts/magistralc/MGNORMAL.ttf); /* Путь к файлу со шрифтом */
+}
+
+/**********************ELEMENTS *********************/
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family: magistralTt;
+	font-weight: 100;
+}
+
+header,
+nav,
+#slider,
+#callback,
+#contactsPlace,
+#footer {
+	width: 1170px;
+}
+
+header:after,
+nav:after,
+#slider:after,
+#callback:after,
+#contactsPlace:after,
+#footer:after {
+	clear: both;
+}
+
+#promo {
+	min-width: 1170px;
+	/*width: 100%;*/
+	    overflow: hidden;
+
+}
+
+header, nav, .callback {
+	    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header, nav, main, #slider, .containerBottom, .contactsPlace  {
+overflow: hidden;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#logo, 
+#logo > .imageResponsive, 
+.title,
+#handset, 
+#qrPhotogallery, 
+#contacts, 
+#supportService, 
+#copyright {
+	float:left;
+}
+
+#authPlace, 
+.callbackText, 
+.promoText, 
+.socialMarkers {
+	float: right;
+}
+
+#logo > .title > .mainTitle, 
+#logo > .title > .subTitle,
+#contactsPlace > .contacts > h2,
+#contactsPlace > .supportService > h2,
+span.inc {
+	font-family: magistralTt;	
+}
+
+nav > ul {
+	display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li > a,
+#promo,
+.promoText > h2,
+.copyrightText {
+	font-family: MyriadProRegular;
+}
+
+#logo > .title > .mainTitle, 
+#logo > .title > .subTitle,
+nav > ul > li > a,
+.promoText > h2,
+#contactsPlace {
+	text-transform: uppercase;	
+}
+
+#logo > .title > .mainTitle > span, 
+/*#logo > .title > .subTitle > span.subTitleStrong,*/
+#contactsPlace,
+.subTitleStrong {
+	font-weight: bold;
+}
+
+#logo > .title,
+nav > ul > li > a,
+#callback,
+#qrPhotogallery,
+.promoText > ul > li > a,
+#contactsPlace,
+.copyrightText,
+footer {
+	color: #fff;
+}
+
+span.color {
+	color: #32d139;
+}
+
+.imageResponsive {
+	/*width: 100%;*/
+}
+
+.copyrightText,
+nav > ul > li > a {
+	font-size: 14px;
+}
+
+span.inc {
+	font-size: 12px;
+}
+
+
+.containerTop {
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*****************HEADER*************************/
+
+#logo {
+	    margin-top: 50px;
+	        padding-left: 20px;
+}
+
+#logo > .imageResponsive {
+	    height: 80px;
+	display: block;	
+}
+
+#logo > .title {
+	padding-left: 15px;	
+}
+
+#logo > .title > .mainTitle {	
+	font-size: 70px;
+	margin: 0;
+}
+
+p.subTitle {
+	margin-top: 0px;
+}
+
+
+#logo > .title > .subTitle,
+#contactsPlace > .contacts > h2,
+#contactsPlace > .supportService > h2 {
+	font-size: 16px;	
+}
+
+/*****************SITE NAVIGATION*****************************************/
+
+nav {
+	    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+nav > ul {
+	text-decoration: none;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+
+nav > ul > li > a {
+	position: relative;
+	padding: 10px 20px;
+}
+
+nav > ul > li:nth-child(1) > a:before,
+nav > ul > li:nth-child(2) > a:before,
+nav > ul > li:nth-child(3) > a:before,
+nav > ul > li:nth-child(4) > a:before {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+}
+
+nav > ul > li:nth-child(1) > a:before {
+	    background: url(../images/heart.png);
+    position: absolute;
+    width: 33px;
+    height: 28px;
+    left: -45px;
+    top: 5px;
+}
+
+nav > ul > li:nth-child(2) > a:before {
+	background: url(../images/nurse.png);
+    position: absolute;
+    width: 28px;
+    height: 36px;
+    left: -40px;
+    top: 2px;
+}
+
+nav > ul > li:nth-child(3) > a:before {
+	    background: url(../images/youtube.png);
+    position: absolute;
+    width: 39px;
+    height: 35px;
+    left: -50px;
+    top: 5px;
+}
+
+nav > ul > li:nth-child(4) > a:before {
+	    background: url(../images/gadgets.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: -48px;
+    top: 5px;
+}
+
+/*************************SLIDER********************/
+
+#slider {
+	margin-top: 30px;
+}
+
+.slick-slider {
+     margin-bottom: 0px; 
+}
+
+.slick-track > div {
+	    height: 340px;
+    margin-top: 30px;
+}
+
+.slick-slider {
+	    border: 2px solid rgba(50, 209, 57, 0.2);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider > div > div > div > div.sliderThirdFrame {
+	display: flex;
+}
+
+.sliderText {
+	margin: 70px;
+}
+
+.sliderSecondFrame > .sliderText {
+	    margin-top: 55px;
+}
+
+.sliderFirstFrame {
+	background: url(../images/worldMapSlider.png) 100px 25px no-repeat;
+}
+
+.sliderSecondFrame {
+	background: url(../images/sliderTwoBackground.png) 100px 25px no-repeat;
+}
+
+#slider > div > div > div > div.sliderFirstFrame.slick-slide > div > p.mainText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#slider > div > div > div > div.sliderFirstFrame.slick-slide > div > p.anotherText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#slider > div > div > div > div.sliderFirstFrame.slick-slide > div > p.lastText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 26px;
+}
+
+#slider > div > div > div > div.sliderFirstFrame > div > p {
+	float: left;
+}
+
+#slider > div > div > div > div.sliderFirstFrame > div > img {
+	float: left;
+	margin-left: 20px;
+} 
+
+/*****************/
+
+#slider > div > div > div > div.sliderSecondFrame.slick-slide > div > p.mainText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+        font-size: 36px;
+}
+
+#slider > div > div > div > div.sliderSecondFrame.slick-slide > div > p.anotherText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+        font-size: 56px;
+}
+
+/*******************/
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight {
+	margin-left: 130px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame > div.sliderTextLeft > p.mainText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 49px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextLeft > p.anotherText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextLeft > p.lastText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 60px
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight > p.mainText {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 56px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight > div > p:nth-child(1) > span {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight > div > p:nth-child(2) > span {
+	font-family: MyriadProBold;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 56px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight > div > p{
+	margin: 0px;
+}
+
+.sliderTextLeft {
+	margin: 70px;
+    margin-right: 0px;
+}
+
+.sliderTextRight {
+	margin: 70px;
+    margin-left: 100px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide.slick-current.slick-active > div.sliderTextRight > img {
+	float: left;
+    margin-left: 20px;
+}
+
+#slider > div > div > div > div.sliderThirdFrame.slick-slide > div.sliderTextRight > div {
+	    float: left;
+}
+
+/*************************CALLBACK*******************/
+
+#handset,
+.callbackText {
+	font-size: 25px;
+}
+
+#handset > button {
+	/************************/
+}
+
+.callback {
+height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*************************PROMO*********************/
+#qrPhotogallery {
+    background-color: #5eba0a;
+    width: 30%;
+        height: 340px;
+}
+
+.promoText {
+width: 64%;
+    background: url(../images/promoTextBackground.jpg) no-repeat;
+    /* margin-left: -20px; */
+    padding: 20px 25px 20px 25px;
+    overflow: hidden;
+    height: 360px;
+}
+
+.promoText > h2 {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.promoText > p {
+	    font-size: 23px;
+    color: #cccccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.promoText > ul > li > a {
+	position: relative;
+}
+
+.promoText > ul > li > a:before {
+	content: '';
+	background: url(../images/arrow.png);
+	left: 10px;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+}
+
+/*********************CONTACTSPLACE**************************/
+
+#contactsPlace > .contacts > h2,
+#contactsPlace > .supportService > h2 {
+	text-decoration: underline;
+}
+
+.contacts{
+	    float: left;
+	        margin-right: 100px;
+}
+
+.contacts > p, .supportService > p {
+	    line-height: 20px;
+}
+
+/*********************FOOTER********************************/
+
+footer {
+	padding-top: 130px;
+}
+
+footer > div {
+	text-align: left;
+}
+
+footer > div > .imageResponsive {
+	display: inline-block;
+}
+
+footer > .socialMarkers {
+	display: block;
+}
+
+footer > .socialMarkers > ul {
+	text-decoration: none
+}
+
+footer > .socialMarkers > ul > li {
+	display: inline-block;
+}
+
+footer > .socialMarkers > ul > li > a > img {
+	opacity: 60%;
+	transition: 300ms;
+}
+
+footer > .socialMarkers > ul > li > a > img:hover {
+	opacity: 100%;
+	transition: 300ms;
+}
+
+.containerBottom {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086a3+0,06a8d0+100 */
+background: #0086a3; /* Old browsers */
+background: -moz-linear-gradient(top,  #0086a3 0%, #06a8d0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0086a3), color-stop(100%,#06a8d0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0086a3 0%,#06a8d0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0086a3 0%,#06a8d0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0086a3 0%,#06a8d0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0086a3 0%,#06a8d0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0086a3', endColorstr='#06a8d0',GradientType=0 ); /* IE6-9 */
+
+}
+
+.mainText {
+ font-size: 68px;
+ color: #fff;
+}
+
+.anotherText {
+	font-size: 52px;
+	color: #fff;
+}
+
+#promo > div.promoText > ul {
+	list-style-type: none;
+	    -webkit-padding-start: 0px;
+}
+
+#promo > div.promoText > ul > li {
+font-size: 23px;
+    position: relative;
+    padding: 5px 5px;
+    margin-left: 30px;
+}
+
+#promo > div.promoText > ul > li:before {
+content: url(../images/check.png);
+    width: 33px;
+    height: 32px;
+    left: -33px;
+    top: 0px;
+    position: absolute;
+}
+
+.qrPhotogallery{
+
+    /* define how much padding you want in between your images */
+    padding:10px;
+
+    }
+
+.qrPhotogallery img{
+
+    /* ensures padding at the bottom of the image is correct */
+    vertical-align:bottom;
+
+    /* hide the images until the plugin has run. the plugin will reveal the images*/
+    opacity:0;
+
+    }

@@ -4,12 +4,22 @@
 		<meta name="description" content="" /><!--INSERT DESCRIPTION FROM VARIABLE -->
 		<meta name="keywords" content="" /><!--INSERT KEYWORDS FROM VARIABLE -->
 		<meta charset="utf8" />
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+		<link rel="stylesheet" href="styles/jquery.jMosaic.css"/>
+		<link rel="stylesheet" type="text/css" href="javascript/slick/slick.css"/>
+		<!-- // Add the new slick-theme.css if you want the default styling -->
+		<link rel="stylesheet" type="text/css" href="javascript/slick/slick-theme.css"/>
+		<link rel="stylesheet" href="styles/style.css" />
+
+		<script type="text/javascript" src="javascript/jquery-1.11.3.min.js"></script>
+
 		<title></title><!--INSERT TITLE FROM VARIABLE -->
 
-		<link rel="stylesheet" src="styles/style.css" />
+		
 	</head>
 
 	<body>
+	<div class="containerTop">	
 		<header>
 			<div id="logo">
 				<img class="imageResponsive" src="images/logo.png" alt="" title="" />	
@@ -35,7 +45,7 @@
 				<div class="slider">
 					<div class="sliderFirstFrame">
 						<div class="sliderText">
-							<p class="mainText"><span class="color">24 тысячи </span>человек</p>
+							<p class="mainText"><span class="color">24 тысячи </span>человек</p><img class="imageResponsive floatRight"	src="images/checkSlider.png" alt="" title="" />
 							<p class="anotherText">Уже доверили нам</p>
 							<p class="lastText">безопасность своих родных и близких !</p>
 						</div>	
@@ -44,15 +54,15 @@
 						<div class="sliderText">
 							<p class="mainText">Для оформления оставьте<br />
 								<span class="color">ваш контактный телефон ниже !</span></p>
-							<p class="anotherText"><span class="color">Выдается бесплатно</span>для рф<br />
+							<p class="anotherText"><span class="color">Выдается бесплатно</span> для рф<br />
 								и стран снг</p>
 						</div>	
 					</div>	
 					<div class="sliderThirdFrame">
 						<div class="sliderTextLeft">
-							<p class="mainText">Работает<span class="color">24 часа</span></p>
+							<p class="mainText">Работает<span class="color"> 24 часа</span></p>
 							<p class="anotherText">В сутки</p>
-							<p class="lastText"><span class="color">И 7 дней</span>в неделю</p>
+							<p class="lastText"><span class="color">И 7 дней</span> в неделю</p>
 						</div>
 						<div class="sliderTextRight">
 							<p class="mainText">Инновация</p>
@@ -60,7 +70,7 @@
 								<p><span class="color">2015</span></p>
 								<p><span class="color">Года</span></p>
 							</div>
-							<img class="imageResponsive floatRight"	src="images/cup.png" alt="" title="" />
+							<img class="imageResponsive floatRight"	src="images/cupSlider.png" alt="" title="" />
 						</div>	
 					</div>	
 				</div>	
@@ -72,9 +82,19 @@
 					<p>И мы перезвоним вам<br />
 						в течении часа</p>
 				</div>	
-			<section>
+				<form method="post">
+			        <textarea id="mytextarea"></textarea>
+			    </form>
+			</section>
 			<section id="promo" class="promo">
-				<div id="qrPhotogallery">
+				<div id="qrPhotogallery" class="qrPhotogallery">
+					<img src="http://placehold.it/400x200" />
+					<img src="http://placehold.it/500x200" />
+					<img src="http://placehold.it/200x200" />
+					<img src="http://placehold.it/200x200" />
+					<img src="http://placehold.it/200x200" />
+					<img src="http://placehold.it/200x200" />
+					<img src="http://placehold.it/200x200" />
 				</div>	
 				<div class="promoText">
 					<h2>Технология <span class="color">&#38; любовь</span></h2>
@@ -88,6 +108,8 @@
 					</ul>	
 				</div>	
 			<section>
+		</div>
+		<div class="containerBottom">		
 			<section id="contactsPlace" class="contactsPlace">
 				<div class="contacts">
 					<h2>Контакты</h2>
@@ -109,16 +131,23 @@
 			</div>
 			<div class="socialMarkers">
 				<ul>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
-					<li><a href=""><img class="image-responsive" src="images/" alt="" title="" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/vkontakte.png" alt="Вконтакте" title="Вконтакте" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/youtube.png" alt="YouTube" title="YouTube" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/instagram.png" alt="Инстаграм" title="Инстаграм" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/twitter.png" alt="Твиттер" title="Твиттер" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/mail.png" alt="Почта" title="Почта" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/rss.png" alt="Новостная лента" title="Новостная лента" /></a></li>
+					<li><a href=""><img class="image-responsive" src="images/social/skype.png" alt="Скайп" title="Скайп" /></a></li>
 				</ul>	
 			</div>	
 		</footer>
-		<script src="javascript/" ></script>	
+		</div>
+		
+
+		<script type="text/javascript" src="javascript/slick/slick.min.js"></script>		
+		<script src="javascript/jquery.jMosaic.js"></script>
+		<script src="javascript/parallax.min.js"></script>
+		<script src="javascript/smooth_scroll.js"></script>
+		<script type="text/javascript" src="javascript/userScript.js"></script>		
 	</body>	
 </html>
